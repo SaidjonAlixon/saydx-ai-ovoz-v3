@@ -1,0 +1,15 @@
+{
+  "name": "SAYD.X - Uddalab bo'lmas topshiriqlar bajaruvchisi",
+  "short_name": "SAYD.X",
+  "description": "SAYD.X - mobil qurilmalar uchun tez va interaktiv xizmatlar. Telegram bot, veb-sayt, avtomatlashtirish va boshqa IT yechimlar.",
+  "theme_color": "#3B82F6",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "orientation": "portrait-primary",
+  "icons": [],
+  "categories": ["business", "productivity", "utilities"],
+  "lang": "uz",
+  "dir": "ltr"
+}

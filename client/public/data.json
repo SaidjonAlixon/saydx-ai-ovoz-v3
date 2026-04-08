@@ -1,0 +1,1029 @@
+{
+  "leads": [
+    [
+      "6b1e178d-d501-4e25-a2d4-a807b38231fa",
+      {
+        "name": "az",
+        "phone": "+998 99 554 20 61",
+        "telegram": "@test",
+        "serviceType": "Veb-sayt",
+        "budget": "$300 - $500",
+        "timeline": "2-3 hafta ichida",
+        "description": "zor bolishiu kere",
+        "fileUrl": null,
+        "source": "website",
+        "email": null,
+        "id": "6b1e178d-d501-4e25-a2d4-a807b38231fa",
+        "createdAt": "2026-03-07T17:29:38.931Z",
+        "status": "new"
+      }
+    ],
+    [
+      "cb7bff2b-ff4e-40f3-9ae1-29d7fa899455",
+      {
+        "name": "az",
+        "phone": "+998 95 656 05 42",
+        "telegram": "@test",
+        "serviceType": "Veb-sayt",
+        "budget": "$300 - $500",
+        "timeline": "1 oy ichida",
+        "description": "Dsdd",
+        "fileUrl": null,
+        "source": "website",
+        "email": null,
+        "id": "cb7bff2b-ff4e-40f3-9ae1-29d7fa899455",
+        "createdAt": "2026-03-07T17:30:40.827Z",
+        "status": "new"
+      }
+    ],
+    [
+      "a3069e4f-9a6b-43a5-b46a-c044745b7eaf",
+      {
+        "name": "az",
+        "phone": "+998 99 504 23 53",
+        "telegram": "@ustenov13",
+        "serviceType": "UI/UX Dizayn",
+        "budget": "$300 - $500",
+        "timeline": "1 oy ichida",
+        "description": "test",
+        "fileUrl": null,
+        "source": "website",
+        "email": null,
+        "id": "a3069e4f-9a6b-43a5-b46a-c044745b7eaf",
+        "createdAt": "2026-03-07T17:52:44.060Z",
+        "status": "in_progress"
+      }
+    ],
+    [
+      "e98083a0-359e-4d70-ac37-4ba7a0cf6fd5",
+      {
+        "name": "az",
+        "phone": "+998 95 656 51 65",
+        "telegram": "@ustenov13",
+        "serviceType": "Veb-sayt",
+        "budget": "$300 - $500",
+        "timeline": "1 oy ichida",
+        "description": "saf",
+        "fileUrl": null,
+        "source": "website",
+        "email": null,
+        "id": "e98083a0-359e-4d70-ac37-4ba7a0cf6fd5",
+        "createdAt": "2026-03-07T17:55:52.181Z",
+        "status": "in_progress"
+      }
+    ],
+    [
+      "c01368a9-2642-4d44-9608-eb40ef87efe4",
+      {
+        "name": "az",
+        "phone": "+998 99 996 56 51",
+        "telegram": "@test",
+        "serviceType": "Mini-ilova",
+        "budget": "$300 - $500",
+        "timeline": "1 oy ichida",
+        "description": "sx",
+        "fileUrl": null,
+        "source": "website",
+        "email": null,
+        "id": "c01368a9-2642-4d44-9608-eb40ef87efe4",
+        "createdAt": "2026-03-07T17:57:07.826Z",
+        "status": "completed"
+      }
+    ],
+    [
+      "fa3d7ec2-b232-4586-aa82-e1c8f5ff4589",
+      {
+        "name": "as",
+        "phone": "+998975420613",
+        "serviceType": "Telegram Bot",
+        "description": "ass",
+        "source": "bot",
+        "telegramChatId": "1178106310",
+        "telegram": "@ustenov13",
+        "email": null,
+        "budget": null,
+        "timeline": null,
+        "fileUrl": null,
+        "id": "fa3d7ec2-b232-4586-aa82-e1c8f5ff4589",
+        "createdAt": "2026-03-07T19:01:09.604Z",
+        "status": "new"
+      }
+    ],
+    [
+      "52b78397-aea9-4e9f-b919-e72c3000eeb7",
+      {
+        "name": "qs",
+        "phone": "+998 99 504 23 53",
+        "telegram": "@ustenov13",
+        "serviceType": "Mini-ilova",
+        "budget": "$300 - $500",
+        "timeline": "2-3 hafta ichida",
+        "description": "sq",
+        "fileUrl": null,
+        "source": "website",
+        "email": null,
+        "telegramChatId": null,
+        "id": "52b78397-aea9-4e9f-b919-e72c3000eeb7",
+        "createdAt": "2026-03-07T19:02:20.339Z",
+        "status": "new"
+      }
+    ],
+    [
+      "4c048fb4-873e-441c-b547-e487202365ff",
+      {
+        "name": "az",
+        "phone": "+998 95 655 16 21",
+        "telegram": "@ustenov13",
+        "serviceType": "Veb-sayt",
+        "budget": "$300 - $500",
+        "timeline": "2-3 hafta ichida",
+        "description": "sq",
+        "fileUrl": null,
+        "source": "website",
+        "email": null,
+        "telegramChatId": null,
+        "id": "4c048fb4-873e-441c-b547-e487202365ff",
+        "createdAt": "2026-03-07T19:02:47.565Z",
+        "status": "new"
+      }
+    ],
+    [
+      "7794fc1a-2a69-41b3-a2f1-6cc9dd072d42",
+      {
+        "name": "Add",
+        "phone": "998970520613",
+        "serviceType": "Veb-sayt",
+        "description": "Ccf",
+        "source": "bot",
+        "telegramChatId": "8486506583",
+        "telegram": "@ustenov52",
+        "email": null,
+        "budget": null,
+        "timeline": null,
+        "fileUrl": null,
+        "id": "7794fc1a-2a69-41b3-a2f1-6cc9dd072d42",
+        "createdAt": "2026-03-07T19:24:34.958Z",
+        "status": "in_progress"
+      }
+    ],
+    [
+      "4ef0c99a-cc84-447e-9f93-825affd899a5",
+      {
+        "name": "qs",
+        "phone": "+998 99 504 23 53",
+        "telegram": "@test",
+        "serviceType": "Veb-sayt",
+        "budget": "$300 - $500",
+        "timeline": "2-3 hafta ichida",
+        "description": "acxa",
+        "fileUrl": null,
+        "source": "website",
+        "email": null,
+        "telegramChatId": null,
+        "id": "4ef0c99a-cc84-447e-9f93-825affd899a5",
+        "createdAt": "2026-03-07T20:01:33.799Z",
+        "status": "new",
+        "adminReply": "ha"
+      }
+    ],
+    [
+      "4f0bfc75-413a-4a28-88c5-19e6374e5852",
+      {
+        "name": "qqq",
+        "phone": "+998 99 504 23 53",
+        "telegram": "@test",
+        "serviceType": "Target Reklama",
+        "budget": "$1,500+",
+        "timeline": "2-3 hafta ichida",
+        "description": "qqqqq",
+        "fileUrl": null,
+        "source": "website",
+        "email": null,
+        "telegramChatId": null,
+        "id": "4f0bfc75-413a-4a28-88c5-19e6374e5852",
+        "createdAt": "2026-03-07T20:06:13.881Z",
+        "status": "new",
+        "adminReply": "dadadaad"
+      }
+    ],
+    [
+      "443925c4-9d7a-4819-add7-2a134a373583",
+      {
+        "name": "Test User",
+        "phone": "+998 90 123 45 67",
+        "telegram": "@testuser",
+        "serviceType": "Veb-sayt",
+        "budget": "$300 - $500",
+        "timeline": "2-3 hafta ichida",
+        "description": "kk",
+        "fileUrl": null,
+        "source": "website",
+        "email": null,
+        "telegramChatId": null,
+        "id": "443925c4-9d7a-4819-add7-2a134a373583",
+        "createdAt": "2026-03-07T21:26:28.123Z",
+        "status": "new",
+        "adminReply": "dasd"
+      }
+    ],
+    [
+      "c0ff9540-c59e-40a9-a1e6-3d202c3fd523",
+      {
+        "name": "Test User",
+        "phone": "+998 90 123 45 67",
+        "telegram": "@testuser",
+        "serviceType": "Veb-sayt",
+        "budget": "$300 - $500",
+        "timeline": "2-3 hafta ichida",
+        "description": "sds",
+        "fileUrl": null,
+        "source": "website",
+        "email": null,
+        "telegramChatId": null,
+        "id": "c0ff9540-c59e-40a9-a1e6-3d202c3fd523",
+        "createdAt": "2026-03-07T21:30:30.888Z",
+        "status": "in_progress",
+        "adminReply": "aaaa"
+      }
+    ],
+    [
+      "73cbba8b-5fc8-45d6-b86a-34ed4b04e57e",
+      {
+        "name": "Test User",
+        "phone": "+998 90 123 45 67",
+        "telegram": "@testuser",
+        "serviceType": "Telegram Bot",
+        "budget": "$300 - $500",
+        "timeline": "1 hafta ichida",
+        "description": "Test description for troubleshooting.",
+        "fileUrl": null,
+        "source": "website",
+        "email": null,
+        "telegramChatId": null,
+        "id": "73cbba8b-5fc8-45d6-b86a-34ed4b04e57e",
+        "createdAt": "2026-03-07T21:37:01.588Z",
+        "status": "in_progress",
+        "adminReply": null
+      }
+    ],
+    [
+      "d5edf68f-e370-464b-ae4a-3f69435d57cb",
+      {
+        "name": "Test User",
+        "phone": "+998 90 123 45 67",
+        "telegram": "@testuser",
+        "serviceType": "Telegram Bot",
+        "budget": "$300 - $500",
+        "timeline": "1 hafta ichida",
+        "description": "Test description.",
+        "fileUrl": null,
+        "source": "website",
+        "email": null,
+        "telegramChatId": null,
+        "id": "d5edf68f-e370-464b-ae4a-3f69435d57cb",
+        "createdAt": "2026-03-07T21:40:33.650Z",
+        "status": "new",
+        "adminReply": "jgjg"
+      }
+    ],
+    [
+      "f192bb9b-863b-432e-9af8-3de978bf7089",
+      {
+        "name": "Ta",
+        "phone": "+998 99 890 23 45",
+        "telegram": "@testusera",
+        "serviceType": "Veb-sayt",
+        "budget": "$100 - $300",
+        "timeline": "1 oy ichida",
+        "description": "Bu premium crystal dizaynini sinash uchun test tavsifi. Shaffoflik va xiralashgan orqa fon juda chiroyli ko'rinmoqda.asa",
+        "fileUrl": null,
+        "source": "website",
+        "email": null,
+        "telegramChatId": null,
+        "id": "f192bb9b-863b-432e-9af8-3de978bf7089",
+        "createdAt": "2026-03-11T12:01:43.804Z",
+        "status": "in_progress",
+        "adminReply": "aaasas"
+      }
+    ],
+    [
+      "39590122-7146-4024-bf6c-24c555d36f2c",
+      {
+        "name": "Saidjon Alixon",
+        "phone": "+998 90 898 94 47",
+        "telegram": "@SFDVSFV",
+        "serviceType": "Veb-sayt",
+        "budget": "$300 - $500",
+        "timeline": "2-3 hafta ichida",
+        "description": "sdcsc",
+        "fileUrl": null,
+        "source": "website",
+        "email": null,
+        "telegramChatId": null,
+        "id": "39590122-7146-4024-bf6c-24c555d36f2c",
+        "createdAt": "2026-03-27T12:55:50.312Z",
+        "status": "new",
+        "adminReply": null
+      }
+    ]
+  ],
+  "services": [
+    [
+      "telegram-bot",
+      {
+        "id": "76f93ccb-7078-4295-9480-b5008105561f",
+        "name": "Telegram Bot",
+        "slug": "telegram-bot",
+        "shortDescription": "Biznesingiz uchun maxsus Telegram bot yaratamiz",
+        "fullDescription": "Biznesingizni avtomatlashtirish va mijozlar bilan samarali muloqot qilish uchun professional Telegram bot yaratamiz. Bot orqali buyurtmalar qabul qilish, to'lovlarni amalga oshirish, mijozlar bazasini boshqarish va 24/7 mijozlarga xizmat ko'rsatish mumkin. Botda admin panel, statistika, avtomatik javoblar, fayl yuklash, geolokatsiya va boshqa zamonaviy imkoniyatlar mavjud. Restoran, do'kon, xizmat ko'rsatish, ta'lim va boshqa sohalar uchun moslashtirilgan yechimlar.",
+        "category": "Avtomatlashtirish",
+        "basePrice": 100,
+        "duration": "5-7 kun",
+        "rating": "4.8",
+        "features": "[\"Buyurtma qabul qilish\",\"To'lov integratsiyasi\",\"Admin panel\",\"Mijozlar bazasi\",\"Avtomatik javoblar\",\"Statistika va hisobotlar\",\"Fayl yuklash\",\"Geolokatsiya\",\"24/7 ishlash\"]",
+        "calculatorParams": null,
+        "isActive": "true",
+        "createdAt": "2026-03-07T17:13:03.448Z"
+      }
+    ],
+    [
+      "veb-sayt",
+      {
+        "id": "a184bb18-806f-4a99-91b0-1262eb0f0d92",
+        "name": "Veb-sayt",
+        "slug": "veb-sayt",
+        "shortDescription": "Zamonaviy, tezkor va SEO optimallashtirilgan veb-sayt",
+        "fullDescription": "Biznesingiz uchun professional veb-sayt yaratamiz. Zamonaviy texnologiyalar (React, Next.js, Node.js) yordamida tezkor, xavfsiz va SEO optimallashtirilgan saytlar. Mobil qurilmalarga to'liq moslashgan responsive dizayn, admin panel, ma'lumotlar bazasi, to'lov tizimi integratsiyasi va Google Analytics bilan kengaytirilgan funksionallik. Korporativ saytlar, onlayn do'konlar, bloglar, portfolio saytlar va boshqa turdagi loyihalar uchun maxsus yechimlar.",
+        "category": "Veb-dasturlash",
+        "basePrice": 300,
+        "duration": "7-14 kun",
+        "rating": "4.9",
+        "features": "[\"Responsive dizayn\",\"SEO optimizatsiya\",\"CMS tizimi\",\"Analitika\",\"Admin panel\",\"Ma'lumotlar bazasi\",\"To'lov integratsiyasi\",\"SSL sertifikat\",\"Tezkor yuklanish\",\"Mobil optimizatsiya\"]",
+        "calculatorParams": null,
+        "isActive": "true",
+        "createdAt": "2026-03-07T17:13:03.448Z"
+      }
+    ],
+    [
+      "sheets-avtomatlashtirish",
+      {
+        "id": "30aefc82-f7e1-46e5-a41c-37190400d789",
+        "name": "Sheets Avtomatlashtirish",
+        "slug": "sheets-avtomatlashtirish",
+        "shortDescription": "Google Sheets integratsiyasi va avtomatlashtirish",
+        "fullDescription": "Google Sheets asosida biznes jarayonlaringizni avtomatlashtirish va hisobotlarni tizimlashtirish. Ma'lumotlarni avtomatik to'ldirish, hisobotlar yaratish, ma'lumotlar bazasi bilan sinxronizatsiya qilish va API orqali boshqa tizimlar bilan bog'lash. Moliyaviy hisobotlar, inventarizatsiya, mijozlar bazasi, sotish statistikasi va boshqa biznes jarayonlarni avtomatlashtirish. Excel va Google Sheets orasida ma'lumotlar almashinuvi, avtomatik hisoblash formulalari va vizualizatsiya yaratish.",
+        "category": "Avtomatlashtirish",
+        "basePrice": 100,
+        "duration": "3-5 kun",
+        "rating": "4.7",
+        "features": "[\"Google Sheets integratsiyasi\",\"Avtomatik hisobotlar\",\"Ma'lumotlar sinxronizatsiyasi\",\"API integratsiya\",\"Excel bilan bog'lanish\",\"Avtomatik hisoblash\",\"Vizualizatsiya\",\"Ma'lumotlar filtratsiyasi\",\"E-mail hisobotlar\",\"Real-time yangilanish\"]",
+        "calculatorParams": null,
+        "isActive": "true",
+        "createdAt": "2026-03-07T17:13:03.448Z"
+      }
+    ],
+    [
+      "ui-ux-dizayn",
+      {
+        "id": "d1735b60-4cca-478e-aadc-dbb6b6254602",
+        "name": "UI/UX Dizayn",
+        "slug": "ui-ux-dizayn",
+        "shortDescription": "Zamonaviy va foydalanuvchiga qulay dizayn",
+        "fullDescription": "Mobil ilova, veb-sayt va boshqa digital mahsulotlar uchun professional UI/UX dizayn xizmatlari. Foydalanuvchi tajribasini (UX) tadqiq qilish, interfeys dizayni (UI) yaratish, prototiplashtirish va brending. Figma, Adobe XD, Sketch kabi professional vositalar yordamida zamonaviy, intuitiv va estetik jihatdan jozibali dizaynlar. Mobil ilovalar, veb-saytlar, admin panellar, dashboardlar va boshqa interfeyslar uchun maxsus yechimlar. Foydalanuvchi testlari, A/B testing va dizayn optimizatsiyasi ham kiritilgan.",
+        "category": "Dizayn",
+        "basePrice": 250,
+        "duration": "5-7 kun",
+        "rating": "4.9",
+        "features": "[\"UI/UX dizayn\",\"Prototiplashtirish\",\"Brending\",\"Mobil va veb dizayn\",\"Foydalanuvchi tadqiqi\",\"Wireframing\",\"Visual design\",\"Design system\",\"Figma/Adobe XD\",\"A/B testing\"]",
+        "calculatorParams": null,
+        "isActive": "true",
+        "createdAt": "2026-03-07T17:13:03.448Z"
+      }
+    ],
+    [
+      "mini-ilova",
+      {
+        "id": "1d009ad8-9061-43cc-b09e-9f27d39a4270",
+        "name": "Mini-ilova",
+        "slug": "mini-ilova",
+        "shortDescription": "Telegram va boshqa platformalar uchun mini-ilovalar",
+        "fullDescription": "Telegram Mini Apps, WeChat mini programs va boshqa platformalar uchun interaktiv mini-ilovalar yaratish. Telegram bot bilan integratsiya qilingan, to'liq funksional mini-ilovalar. Onlayn do'konlar, o'yinlar, kalkulyatorlar, hisobotlar va boshqa biznes yechimlari uchun maxsus ilovalar. React, Vue.js yoki vanilla JavaScript texnologiyalari yordamida tezkor va optimallashtirilgan ilovalar. To'lov tizimi, geolokatsiya, kamera, fayl yuklash va boshqa mobil imkoniyatlar bilan kengaytirilgan funksionallik.",
+        "category": "Mobil dasturlash",
+        "basePrice": 400,
+        "duration": "7-10 kun",
+        "rating": "4.8",
+        "features": "[\"Telegram Mini App\",\"Web App\",\"Payment integratsiya\",\"Backend tizim\",\"Bot integratsiyasi\",\"Geolokatsiya\",\"Kamera va fayllar\",\"Push notifications\",\"Offline rejim\",\"Analitika\"]",
+        "calculatorParams": null,
+        "isActive": "true",
+        "createdAt": "2026-03-07T17:13:03.448Z"
+      }
+    ],
+    [
+      "telegram-target",
+      {
+        "id": "7a5b5481-2607-4d86-b32b-658570ef9683",
+        "name": "Telegram Target",
+        "slug": "telegram-target",
+        "shortDescription": "Telegram kanallarida samarali target reklama kampaniyalari",
+        "fullDescription": "Telegram kanallarida professional target reklama xizmatlari. Maqsadli auditoriyani aniqlash, reklama postlarini yaratish va optimallashtirish, kanallar orasida reklama tarqatish va natijalarni tahlil qilish. Kreativ postlar, video reklamalar, carousel postlar va boshqa formatlarda samarali reklamalar. Doimiy monitoring, hisobotlar va kampaniyalarni optimallashtirish. Mahalliy va global auditoriyalar uchun maxsus strategiyalar va yondashuvlar. Telegram kanallar ro'yxati, reklama joylashtirish va natijalarni kuzatish.",
+        "category": "Marketing",
+        "basePrice": 200,
+        "duration": "Doimiy",
+        "rating": "4.7",
+        "features": "[\"Maqsadli auditoriya tahlili\",\"Reklama kampaniyasi\",\"A/B testing\",\"Hisobotlar va tahlil\",\"Kreativ postlar\",\"Video reklamalar\",\"ROI optimizatsiya\",\"Doimiy monitoring\",\"Telegram kanallar ro'yxati\",\"Reklama joylashtirish\",\"Natijalarni kuzatish\"]",
+        "calculatorParams": null,
+        "isActive": "true",
+        "createdAt": "2026-03-07T17:13:03.448Z"
+      }
+    ],
+    [
+      "mobil-ilovalar",
+      {
+        "id": "776c0edc-59a6-4cdc-8868-898f06781417",
+        "name": "Mobil ilovalar",
+        "slug": "mobil-ilovalar",
+        "shortDescription": "Android va iOS uchun native mobil ilovalar",
+        "fullDescription": "React Native, Flutter yoki native texnologiyalar (Swift, Kotlin) yordamida professional mobil ilovalar yaratish. Android va iOS platformalarida to'liq funksional, tezkor va optimallashtirilgan ilovalar. Onlayn do'konlar, biznes ilovalari, o'yinlar, ijtimoiy tarmoqlar va boshqa turdagi loyihalar uchun maxsus yechimlar. Push notifications, geolokatsiya, kamera, fayl yuklash, to'lov tizimi va boshqa mobil imkoniyatlar bilan kengaytirilgan funksionallik. App Store va Google Play do'konlarida joylashtirish ham kiritilgan.",
+        "category": "Mobil dasturlash",
+        "basePrice": 1500,
+        "duration": "21-30 kun",
+        "rating": "4.9",
+        "features": "[\"Android va iOS\",\"Native performance\",\"Push notifications\",\"Offline rejim\",\"Geolokatsiya\",\"Kamera va fayllar\",\"To'lov integratsiyasi\",\"Biometrik autentifikatsiya\",\"Real-time chat\",\"Cloud sync\",\"App Store joylashtirish\"]",
+        "calculatorParams": null,
+        "isActive": "true",
+        "createdAt": "2026-03-07T17:13:03.448Z"
+      }
+    ],
+    [
+      "avtomatlashtirilgan-it-xizmatlar",
+      {
+        "id": "40e7eb75-af6b-4c91-907c-57ed38adcb1c",
+        "name": "Avtomatlashtirilgan AyTi xizmatlar",
+        "slug": "avtomatlashtirilgan-it-xizmatlar",
+        "shortDescription": "Biznes jarayonlarini to'liq avtomatlashtirish",
+        "fullDescription": "CRM, ERP, HRM va boshqa biznes tizimlarini integratsiya qilish, avtomatlashtirilgan hisobotlar va monitoring tizimlari yaratish. Mijozlar bilan muloqot, buyurtmalar boshqaruvi, inventarizatsiya, moliyaviy hisobotlar va boshqa biznes jarayonlarni to'liq avtomatlashtirish. API integratsiyasi, ma'lumotlar sinxronizatsiyasi, avtomatik bildirishnomalar va real-time monitoring. Salesforce, HubSpot, 1C, SAP va boshqa tizimlar bilan ishlash. Workflow automation va business process optimization.",
+        "category": "Avtomatlashtirish",
+        "basePrice": 800,
+        "duration": "14-21 kun",
+        "rating": "4.8",
+        "features": "[\"Jarayonlarni avtomatlashtirish\",\"Tizimlarni integratsiya\",\"Hisobotlar\",\"Monitoring\",\"CRM/ERP integratsiya\",\"API development\",\"Workflow automation\",\"Real-time notifications\",\"Data synchronization\",\"Business intelligence\",\"Custom dashboards\"]",
+        "calculatorParams": null,
+        "isActive": "true",
+        "createdAt": "2026-03-07T17:13:03.448Z"
+      }
+    ],
+    [
+      "mijoz-talabi-asosida",
+      {
+        "id": "babe3dc9-f15a-49b4-9a14-364b7c7113d3",
+        "name": "Mijoz talabi asosida",
+        "slug": "mijoz-talabi-asosida",
+        "shortDescription": "Sizning individual talabingiz bo'yicha xizmat",
+        "fullDescription": "Maxsus loyihalar uchun individual yechimlar va texnik yechimlar. Talablaringizni batafsil muhokama qilib, eng mos va samarali yechimni topamiz. Mavjud bo'lmagan xizmatlar, noyob loyihalar, murakkab texnik yechimlar va boshqa maxsus talablar uchun professional xizmat. Loyiha boshidan oxirigacha to'liq qo'llab-quvvatlash, texnik konsultatsiya, dizayn va dasturlash. Blockchain, AI/ML, IoT, AR/VR va boshqa zamonaviy texnologiyalar bilan ishlash. Startap loyihalar, enterprise yechimlar va boshqa murakkab tizimlar uchun maxsus yondashuv.",
+        "category": "Maxsus xizmatlar",
+        "basePrice": 300,
+        "duration": "Kelishilgan holda",
+        "rating": "4.9",
+        "features": "[\"Individual yondashuv\",\"Konsultatsiya\",\"Texnik tahlil\",\"Kengaytirilgan qo'llab-quvvatlash\",\"Maxsus loyihalar\",\"Blockchain/AI/ML\",\"IoT va AR/VR\",\"Startap yechimlar\",\"Enterprise tizimlar\",\"To'liq loyiha boshqaruvi\",\"Texnik hujjatlar\"]",
+        "calculatorParams": null,
+        "isActive": "true",
+        "createdAt": "2026-03-07T17:13:03.448Z"
+      }
+    ]
+  ],
+  "portfolios": [
+    [
+      "e9ba208a-d477-46da-b3f4-4a72cb7ad8ae",
+      {
+        "id": "e9ba208a-d477-46da-b3f4-4a72cb7ad8ae",
+        "title": "DeloTransInc LLC (1500$)",
+        "description": "DeloTransInc LLC — AQSh bo‘ylab yuk tashish kompaniyasi web sayti. Power-only trucking tizimi, tez va ishonchli dispatch xizmati, real vaqt kuzatuv (tracking) tizimi.",
+        "category": "Veb-sayt",
+        "technologies": "[\"React\",\"Node.js\",\"Tracking API\",\"Power-only trucking\"]",
+        "results": "[]",
+        "images": "[\"delotransinc.jpg\"]",
+        "duration": "20 kun",
+        "clientName": "DeloTransInc LLC",
+        "problemStatement": null,
+        "solution": null,
+        "isPublic": "true",
+        "link": "https://www.delotransinc.com",
+        "createdAt": "2026-03-27T12:32:43.686Z"
+      }
+    ],
+    [
+      "b1816af1-500b-40c3-8d47-6778e99ec653",
+      {
+        "id": "b1816af1-500b-40c3-8d47-6778e99ec653",
+        "title": "DachaDor (1500$)",
+        "description": "DachaDor (versiya demo: 2.0) — O‘zbekiston bo‘ylab dacha va dam olish maskanlarini oson topish va bron qilish uchun yaratilgan zamonaviy onlayn platforma. To'lov tizimlari v.2.1, qidiruv va filtrlar mavjud.",
+        "category": "Veb-sayt",
+        "technologies": "[\"React\",\"Node.js\",\"Payment Systems\"]",
+        "results": "[]",
+        "images": "[\"dachador.jpg\"]",
+        "duration": "18 kun",
+        "clientName": "DachaDor",
+        "problemStatement": null,
+        "solution": null,
+        "isPublic": "true",
+        "link": "https://dacha-gamma.vercel.app/",
+        "createdAt": "2026-03-27T12:32:43.686Z"
+      }
+    ],
+    [
+      "e1a59b2a-92a9-4b39-85ae-75d30c6b4c9e",
+      {
+        "id": "e1a59b2a-92a9-4b39-85ae-75d30c6b4c9e",
+        "title": "Butata LLC (800$)",
+        "description": "Butata LLC uchun ishlab chiqilgan zamonaviy va professional korporativ veb-sayt. Google Maps integratsiyasi, tezkor aloqa tugmalari va barcha qurilmalarga moslashgan responsive dizayn.",
+        "category": "Veb-sayt",
+        "technologies": "[\"Frontend\",\"Backend\",\"Google Maps\"]",
+        "results": "[]",
+        "images": "[\"butata.jpg\"]",
+        "duration": "7 kun",
+        "clientName": "Butata LLC",
+        "problemStatement": null,
+        "solution": null,
+        "isPublic": "true",
+        "link": "https://butatallc.com",
+        "createdAt": "2026-03-27T12:32:43.686Z"
+      }
+    ],
+    [
+      "d7dc080c-a6a8-43b8-bcd7-2388795cbe85",
+      {
+        "id": "d7dc080c-a6a8-43b8-bcd7-2388795cbe85",
+        "title": "Delo Truck Center LLC (700$)",
+        "description": "Delo Truck Center LLC uchun ishlab chiqilgan zamonaviy va ishonchli xizmat ko‘rsatish veb-sayti. Truck servis xizmatlari ro‘yxati, Google Maps orqali real manzil va tezkor bog‘lanish (Call Now) interfeysi.",
+        "category": "Veb-sayt",
+        "technologies": "[\"Frontend\",\"Backend\",\"Responsive Design\"]",
+        "results": "[]",
+        "images": "[\"delotruck.jpg\"]",
+        "duration": "7 kun",
+        "clientName": "Delo Truck Center LLC",
+        "problemStatement": null,
+        "solution": null,
+        "isPublic": "true",
+        "link": "https://delotruckcenterllc.com",
+        "createdAt": "2026-03-27T12:32:43.686Z"
+      }
+    ],
+    [
+      "a8e52052-f2c7-4ca9-a53d-bbed69eaa4cf",
+      {
+        "id": "a8e52052-f2c7-4ca9-a53d-bbed69eaa4cf",
+        "title": "Dotsent AI (5000$)",
+        "description": "Dotsent AI — talabalar, o‘qituvchilar va ilmiy izlanish bilan shug‘ullanuvchilar uchun mo‘ljallangan sun’iy intellekt asosidagi Telegram bot. Kurs ishi, maqolalarni avtomatik tayyorlab beradi (PDF, DOCX).",
+        "category": "Telegram Bot",
+        "technologies": "[\"Python\",\"AI\",\"Telegram API\"]",
+        "results": "[]",
+        "images": "[\"dotsent.jpg\"]",
+        "duration": "1 oy",
+        "clientName": "Dotsent AI",
+        "problemStatement": null,
+        "solution": null,
+        "isPublic": "true",
+        "link": "https://t.me/Dotsent_ai_bot",
+        "createdAt": "2026-03-27T12:35:25.434Z"
+      }
+    ],
+    [
+      "e119536f-1d04-49e8-bad8-bda38fdb4521",
+      {
+        "id": "e119536f-1d04-49e8-bad8-bda38fdb4521",
+        "title": "Bitavoy Texnika Ilovasi (1400$)",
+        "description": "Bitavoy Texnika — bu maishiy texnika mahsulotlarini onlayn xarid qilish uchun yaratilgan qulay mini-ilova. Keng assortiment, qulay buyurtma (qidiruv, filtr, savat) va xavfsiz to‘lov imkoniyati.",
+        "category": "Mini-ilova",
+        "technologies": "[\"React\",\"Node.js\",\"Telegram Mini App\"]",
+        "results": "[]",
+        "images": "[\"bitavoy.gif\"]",
+        "duration": "14 kun",
+        "clientName": "Bitavoy Texnika",
+        "problemStatement": null,
+        "solution": null,
+        "isPublic": "true",
+        "link": "https://t.me/Bitavoy_texnika_bot",
+        "createdAt": "2026-03-27T12:35:25.434Z"
+      }
+    ],
+    [
+      "cdeb844a-8900-42ad-a17b-fb9de637191c",
+      {
+        "id": "cdeb844a-8900-42ad-a17b-fb9de637191c",
+        "title": "Zakaz Fastfood Bot (350$)",
+        "description": "Zakaz Fastfood Bot — fastfood buyurtmalarini tez va qulay qilish imkonini beruvchi Telegram bot. Menyu, savat, buyurtmani tasdiqlash va operatorga (admin panelga) yuborish imkoniyati.",
+        "category": "Telegram Bot",
+        "technologies": "[\"Node.js\",\"Telegram API\",\"Admin Panel\"]",
+        "results": "[]",
+        "images": "[\"fastfood.jpg\"]",
+        "duration": "5 kun",
+        "clientName": "Zakaz Fastfood",
+        "problemStatement": null,
+        "solution": null,
+        "isPublic": "true",
+        "link": "https://t.me/saydxuz/124",
+        "createdAt": "2026-03-27T12:35:25.434Z"
+      }
+    ],
+    [
+      "4e0289b4-a2d4-40b4-b3d0-a101320b3590",
+      {
+        "id": "4e0289b4-a2d4-40b4-b3d0-a101320b3590",
+        "title": "Uyg‘unlik (800$)",
+        "description": "Zamonaviy ayollar uchun tabiiy usul bilan homiladorlikni rejalashtirish va tana harorati (ajralmalar, hayz ritmi) tahlili orqali sog‘lom hayot tarzini olib borish mini ilovasi.",
+        "category": "Mini-ilova",
+        "technologies": "[\"Mini App\",\"Health Tracking\"]",
+        "results": "[]",
+        "images": "[\"uygunlik.jpg\"]",
+        "duration": "10 kun",
+        "clientName": "Uyg‘unlik",
+        "problemStatement": null,
+        "solution": null,
+        "isPublic": "true",
+        "link": "https://t.me/uygunlik_ayollar_bot",
+        "createdAt": "2026-03-27T12:35:25.434Z"
+      }
+    ],
+    [
+      "991d9b6b-5028-4ced-9870-8aa4274a7551",
+      {
+        "id": "991d9b6b-5028-4ced-9870-8aa4274a7551",
+        "title": "AKA FC LLC (1000$)",
+        "description": "AKA FC LLC — AQSh bo‘ylab professional yuk tashish (trucking) va logistika xizmatlarini ko‘rsatuvchi kompaniya uchun maxsus ishlab chiqilgan ilg'or korporativ veb-sayt. Sayt orqali owner-operatorlar va company driver'larni jalb qilish (recruiting), ishonchli dispatch xizmatlari va onlayn arizalar qabul qilish jarayonlari to'liq avtomatlashtirilgan. Barcha mobil va kompyuter qurilmalariga to'liq moslashgan zamonaviy dizayn (responsive), tezkor aloqa tugmalari va yuqori ishlash tezligiga ega platforma.",
+        "category": "Veb-sayt",
+        "technologies": "[\"React\",\"Node.js\",\"Logistics Integration\",\"Responsive Design\",\"Google Maps\"]",
+        "results": "[]",
+        "images": "[\"akafcllc.jpg\"]",
+        "duration": "12 kun",
+        "clientName": "AKA FC LLC",
+        "problemStatement": null,
+        "solution": null,
+        "isPublic": "true",
+        "link": "https://akafcllc.com",
+        "createdAt": "2026-03-27T12:37:16.081Z"
+      }
+    ],
+    [
+      "e01411ea-07c0-4966-bc02-9678809570cd",
+      {
+        "id": "e01411ea-07c0-4966-bc02-9678809570cd",
+        "title": "Google Sheets ERP & Data Sync ($1800)",
+        "description": "Katta hajmdagi ma'lumotlar bilan ishlovchi logistika va savdo kompaniyalari uchun o'ta murakkab Google Sheets arxitekturasi. Boshqalar uchun \"imkonsiz\" bo'lgan 100 000+ qatorli ma'lumotlarni qotmasdan, real vaqt rejimida xatosiz sinxronlashtirish tizimi. Ilg'or Google Apps Script orqali tashqi API-larga (CRM, to'lov tizimlari, logistika) to'liq bog'langan o'ta aniq moliyaviy dashboard va avtomatlashtirilgan tahlil moduli.",
+        "category": "Sheets Avtomatlashtirish",
+        "technologies": "[\"Google Sheets API\",\"Apps Script\",\"Data Optimization\",\"ERP System\"]",
+        "results": "[]",
+        "images": "[\"https://upload.wikimedia.org/wikipedia/commons/3/30/Google_Sheets_logo_%282014-2020%29.svg\"]",
+        "duration": "25 kun",
+        "clientName": "Korporativ Mijoz",
+        "problemStatement": null,
+        "solution": null,
+        "isPublic": "true",
+        "link": "https://docs.google.com/spreadsheets",
+        "createdAt": "2026-03-27T12:40:56.435Z"
+      }
+    ],
+    [
+      "cec7a854-23f7-4115-8af0-73946b5a13cd",
+      {
+        "id": "cec7a854-23f7-4115-8af0-73946b5a13cd",
+        "title": "Aqlli HR & Payroll Tizimi ($1200)",
+        "description": "Yuzlab xodimlarga ega kompaniyalar uchun maxsus avtomatlashgan kadrlar va ish haqi hisoblash tizimi. Murakkab algoritmlar yordamida har bir xodimning KPI, ish staji, jarimalar, kasallik varaqalari va bonuslarini hech qanday inson omili aralashuvisiz (0% human error) tezkor hisoblab chiquvchi kuchli instrument. Har oy oxirida natijalarni PDF ko'rinishida xodimlarning o'ziga Telegram-bot orqali avtomatik tarzda yuborish imkoniyati.",
+        "category": "Sheets Avtomatlashtirish",
+        "technologies": "[\"Google Workspace\",\"Advanced Formulas\",\"Telegram API\",\"PDF Generation\"]",
+        "results": "[]",
+        "images": "[\"https://upload.wikimedia.org/wikipedia/commons/3/30/Google_Sheets_logo_%282014-2020%29.svg\"]",
+        "duration": "15 kun",
+        "clientName": "Yirik Kompaniya",
+        "problemStatement": null,
+        "solution": null,
+        "isPublic": "true",
+        "link": "https://docs.google.com/spreadsheets",
+        "createdAt": "2026-03-27T12:40:56.435Z"
+      }
+    ],
+    [
+      "e005f972-460e-466d-af7b-f829e97def65",
+      {
+        "id": "e005f972-460e-466d-af7b-f829e97def65",
+        "title": "AI Ovozli Idrok Platformasi ($5000)",
+        "description": "Kelajak texnologiyalariga asoslangan sun'iy intellekt (AI) ovozli idrok veb-sayti. Sayt foydalanuvchilar bilan jonli ravishda nutq orqali (real-time voice interaction) muloqot qiladi va istalgan savolga ovozli, aqlli javob qaytaradi. Voice Recognition integratsiyasi, NLP va interaktiv premium dizayn orqali eng yuqori darajadagi innovatsion yechimlar yaratiladi.",
+        "category": "Maxsus xizmatlar",
+        "technologies": "[\"AI Voice Recognition\",\"NLP\",\"React\",\"Node.js\",\"Neural Networks\"]",
+        "results": "[]",
+        "images": "[\"ai_voice.jpg\"]",
+        "duration": "1.5 oy",
+        "clientName": "Innovatsion Startap",
+        "problemStatement": null,
+        "solution": null,
+        "isPublic": "true",
+        "link": "https://example-voice-ai.com",
+        "createdAt": "2026-03-27T12:40:56.435Z"
+      }
+    ]
+  ],
+  "articles": [
+    [
+      "2025-tech-trends",
+      {
+        "id": "8c7500de-c225-4e07-b972-55d0ae9ac0da",
+        "title": "2025-yilda biznes uchun eng muhim tehnologiya trendlari",
+        "slug": "2025-tech-trends",
+        "excerpt": "Yangi yilda biznes jarayonlarini avtomatlashtirish va raqamlashtirish bo'yicha eng so'nggi tendentsiyalar.",
+        "content": "Matn bu yerda bo'ladi...",
+        "category": "Tehnologiya",
+        "readTime": "5",
+        "views": 142,
+        "imageUrl": "Modern_tech_workspace_hero_c9c8682e.png",
+        "tags": "[\"Texnologiya\",\"Trendlar\",\"2025\"]",
+        "author": "SAYD.X Team",
+        "isPublished": "true",
+        "createdAt": "2026-03-07T17:13:03.448Z",
+        "updatedAt": "2026-03-07T17:13:03.448Z"
+      }
+    ],
+    [
+      "telegram-bot-biznes",
+      {
+        "id": "f4ce5b73-9371-4384-89e5-6bb7a3a5d003",
+        "title": "Telegram bot orqali biznesni qanday kengaytirish mumkin",
+        "slug": "telegram-bot-biznes",
+        "excerpt": "Real misollar va strategiyalar asosida telegram botlarning biznes uchun afzalliklari.",
+        "content": "Matn bu yerda bo'ladi...",
+        "category": "Marketing",
+        "readTime": "7",
+        "views": 89,
+        "imageUrl": "Mobile_app_interface_mockup_5376ed7a.png",
+        "tags": "[\"Telegram\",\"Bot\",\"Biznes\"]",
+        "author": "SAYD.X Team",
+        "isPublished": "true",
+        "createdAt": "2026-03-07T17:13:03.448Z",
+        "updatedAt": "2026-03-07T17:13:03.448Z"
+      }
+    ],
+    [
+      "veb-sayt-xatolari",
+      {
+        "id": "9698f01f-72f7-49ca-9c8a-9c869b398193",
+        "title": "Veb-sayt yaratishda eng ko'p uchraydigan xatolar",
+        "slug": "veb-sayt-xatolari",
+        "excerpt": "Professional veb-sayt yaratishda oldini olish kerak bo'lgan asosiy muammolar va yechimlar.",
+        "content": "Matn bu yerda bo'ladi...",
+        "category": "Veb-dasturlash",
+        "readTime": "4",
+        "views": 234,
+        "imageUrl": "Modern_tech_workspace_hero_c9c8682e.png",
+        "tags": "[\"Veb\",\"Xatolar\",\"Dasturlash\"]",
+        "author": "SAYD.X Team",
+        "isPublished": "true",
+        "createdAt": "2026-03-07T17:13:03.448Z",
+        "updatedAt": "2026-03-07T17:13:03.448Z"
+      }
+    ],
+    [
+      "as",
+      {
+        "title": "as",
+        "slug": "as",
+        "excerpt": "shoshiltirna",
+        "content": "asxas",
+        "category": "Veb-sayt",
+        "author": "SAYD.X Team",
+        "readTime": "5",
+        "tags": "[]",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMJAXdj57n70uun-YKw82v1JGHhUjBHq-lzQ&s",
+        "isPublished": "true",
+        "id": "4e9bc19e-e4f7-44f9-941e-86d5fd485e9e",
+        "views": 0,
+        "createdAt": "2026-03-07T17:24:07.042Z",
+        "updatedAt": "2026-03-07T17:24:07.042Z"
+      }
+    ]
+  ],
+  "faqs": [
+    [
+      "666bdc65-6561-4345-a134-cb1ea823ee2e",
+      {
+        "id": "666bdc65-6561-4345-a134-cb1ea823ee2e",
+        "question": "Loyiha uchun shartnoma tuziladimi?",
+        "answer": "Ha, albatta! Har bir loyiha uchun rasmiy shartnoma tuziladi. Shartnomada loyiha hajmi, muddati, to'lov shartlari va javobgarlik masalalari aniq belgilab qo'yiladi. Bu esa har ikki tomon uchun ham ishonch va xavfsizlikni ta'minlaydi.",
+        "order": 1,
+        "isActive": "true",
+        "createdAt": "2026-03-07T17:13:03.448Z"
+      }
+    ],
+    [
+      "613d91fc-4d3f-4fb3-b011-42e1be946fe1",
+      {
+        "id": "613d91fc-4d3f-4fb3-b011-42e1be946fe1",
+        "question": "To'lov qanday amalga oshiriladi?",
+        "answer": "Loyiha boshlashdan oldin 50% oldindan to'lov qilinadi. Qolgan 50% loyiha to'liq yakunlangandan va mijoz tomonidan qabul qilingandan keyin to'lanadi. To'lov Click, Payme, bank o'tkazmasi yoki naqd shaklida amalga oshirilishi mumkin.",
+        "order": 2,
+        "isActive": "true",
+        "createdAt": "2026-03-07T17:13:03.448Z"
+      }
+    ],
+    [
+      "29d8647b-749a-4421-8898-d95f1afd7a11",
+      {
+        "id": "29d8647b-749a-4421-8898-d95f1afd7a11",
+        "question": "Loyiha qancha vaqtda tayyorlanadi?",
+        "answer": "Boshlang'ich va o'rtacha murakkablikdagi loyihalar odatda 7–12 ish kuni ichida tayyorlanadi. Murakkabroq va keng funksionallikka ega loyihalar esa 3–4 hafta yoki undan ko'proq vaqt talab qilishi mumkin. Aniq muddat texnik topshiriq (TZ) ishlab chiqilib, loyiha hajmi va talablar to'liq belgilab olingandan so'ng belgilanadi.",
+        "order": 3,
+        "isActive": "true",
+        "createdAt": "2026-03-07T17:13:03.448Z"
+      }
+    ],
+    [
+      "a973e53e-7ad9-48c9-b42f-f20d1010a645",
+      {
+        "id": "a973e53e-7ad9-48c9-b42f-f20d1010a645",
+        "question": "Texnik qo'llab-quvvatlash bo'ladimi?",
+        "answer": "Ha, loyiha topshirilgandan so'ng 1 oy davomida bepul texnik qo'llab-quvvatlash taqdim etiladi. Bu davrda xatolarni tuzatish, kichik o'zgarishlar kiritish va maslahatlar berish bepul amalga oshiriladi. Keyinchalik, istasangiz, oylik texnik qo'llab-quvvatlash xizmatini davom ettirishingiz mumkin.",
+        "order": 4,
+        "isActive": "true",
+        "createdAt": "2026-03-07T17:13:03.448Z"
+      }
+    ],
+    [
+      "afde6d93-6030-47cc-bbac-415fa11dc21f",
+      {
+        "id": "afde6d93-6030-47cc-bbac-415fa11dc21f",
+        "question": "Loyihani o'zimning serverimga joylashtirish mumkinmi?",
+        "answer": "Albatta! Loyihani o'zingizning serveringizga, hosting provayderingizga yoki cloud platformangizga (AWS, Google Cloud, DigitalOcean va h.k.) joylashtirishimiz mumkin. Shuningdek, kerak bo'lsa, hosting tanlash va sozlashda yordam beramiz.",
+        "order": 5,
+        "isActive": "true",
+        "createdAt": "2026-03-07T17:13:03.448Z"
+      }
+    ],
+    [
+      "7a352442-9cec-4a53-866b-76941023d8c6",
+      {
+        "id": "7a352442-9cec-4a53-866b-76941023d8c6",
+        "question": "Loyiha kodlari menga beriladimi?",
+        "answer": "Ha, loyiha uchun to'lov to'liq amalga oshirilgandan so'ng barcha manba kodlari sizga topshiriladi. Shundan keyin siz kodlarning to'liq huquqiy egasiga aylanasiz va ularni xohlagancha o'zgartirish, kengaytirish yoki boshqa tizimlarga integratsiya qilish imkoniyatiga ega bo'lasiz.",
+        "order": 6,
+        "isActive": "true",
+        "createdAt": "2026-03-07T17:13:03.448Z"
+      }
+    ],
+    [
+      "15f0562a-6852-4c5b-a32e-9dc99a3c730d",
+      {
+        "id": "15f0562a-6852-4c5b-a32e-9dc99a3c730d",
+        "question": "Dizayn xizmati ham kiritilganmi?",
+        "answer": "Ha, asosiy paketda UI/UX dizayn xizmati ham kiritilgan. Agar maxsus brending, logo dizayni yoki kengaytirilgan dizayn kerak bo'lsa, alohida UI/UX dizayn xizmatidan foydalanishingiz mumkin.",
+        "order": 7,
+        "isActive": "true",
+        "createdAt": "2026-03-07T17:13:03.448Z"
+      }
+    ],
+    [
+      "b27e2701-5461-49b9-b1a7-3d3f4a305970",
+      {
+        "id": "b27e2701-5461-49b9-b1a7-3d3f4a305970",
+        "question": "Mobil versiya ham bo'ladimi?",
+        "answer": "Barcha veb-saytlar va ilovalar mobil qurilmalarga to'liq moslashtirilgan (responsive) qilib yaratiladi. Alohida native mobil ilova kerak bo'lsa, 'Mobil ilovalar' xizmatidan foydalaning.",
+        "order": 8,
+        "isActive": "true",
+        "createdAt": "2026-03-07T17:13:03.448Z"
+      }
+    ],
+    [
+      "37ac4db8-c225-428b-9228-49151c0785ca",
+      {
+        "id": "37ac4db8-c225-428b-9228-49151c0785ca",
+        "question": "Qanday texnologiyalardan foydalanasiz?",
+        "answer": "Biz loyihalarda zamonaviy, ishonchli va tezkor texnologiyalardan foydalanamiz. Frontendda React, Next.js, Vue.js; Backendda Node.js, Python (Django/FastAPI), Go yoki PHP (Laravel); Ma'lumotlar bazasida PostgreSQL, MySQL yoki MongoDB ishlatamiz. Shuningdek, Telegram Bot API, OpenAI va turli to'lov tizimlari (Click, Payme, Stripe) bilan integratsiya qila olamiz.",
+        "order": 9,
+        "isActive": "true",
+        "createdAt": "2026-03-07T17:13:03.448Z"
+      }
+    ],
+    [
+      "ce5187e0-b47c-45f6-b0a5-852cf0d851a2",
+      {
+        "id": "ce5187e0-b47c-45f6-b0a5-852cf0d851a2",
+        "question": "Loyihaga keyinchalik o'zgartirish kiritish bepulmi?",
+        "answer": "Topshirilgan loyihaga kichik tuzatishlar bepul bo'ladi. Biroq, dastlabki texnik topshiriqda bo'lmagan yangi funksiyalar yoki katta o'zgarishlar qo'shimcha kelishuv asosida amalga oshiriladi.",
+        "order": 10,
+        "isActive": "true",
+        "createdAt": "2026-03-07T17:13:03.449Z"
+      }
+    ],
+    [
+      "1f7e3e4c-0720-4d63-8669-7ce405dd261e",
+      {
+        "question": "Azizbek baribir yaxshi",
+        "answer": "togri",
+        "order": 1,
+        "isActive": "true",
+        "id": "1f7e3e4c-0720-4d63-8669-7ce405dd261e",
+        "createdAt": "2026-03-07T17:24:34.245Z"
+      }
+    ]
+  ],
+  "questions": [
+    [
+      "287c4aa9-27b9-46fa-ab8f-65919e3ed88e",
+      {
+        "name": "azazaz",
+        "text": "asdaSdas",
+        "id": "287c4aa9-27b9-46fa-ab8f-65919e3ed88e",
+        "telegramChatId": null,
+        "reply": "sdAsdasd",
+        "status": "answered",
+        "createdAt": "2026-03-07T19:35:54.224Z"
+      }
+    ],
+    [
+      "4b258105-5341-42bc-9790-af1a6d0da8ba",
+      {
+        "telegramChatId": "8486506583",
+        "name": "Azizbek",
+        "text": "Wsss",
+        "status": "answered",
+        "id": "4b258105-5341-42bc-9790-af1a6d0da8ba",
+        "reply": "as",
+        "createdAt": "2026-03-07T19:41:26.118Z"
+      }
+    ]
+  ],
+  "teamMembers": [
+    [
+      "0965de68-caca-4498-81f1-ec6e05c607f4",
+      {
+        "name": "Ataullayev Saidmuhammadalixon",
+        "role": "CEO",
+        "bio": "SAYD.X IT kompaniyasi asoschisi. Full-stack dasturlash, Telegram botlar, ovozli AI saytlar va Google Sheets bo'yicha mutaxassis. Veb-saytlar, avtomatlashtirish va kiberxavfsizlik yo'nalishida 50+ loyiha boshqaradi. Innovatsion yechimlar va sifatga intiladigan yosh tadbirkor.",
+        "imageUrl": "/uploads/47.jpg",
+        "isMain": "true",
+        "department": "Rahbar",
+        "responsibilities": "[\"Kompaniya strategik rivojlanishini boshqarish\",\"IT, veb-sayt, Telegram bot va avtomatlashtirish loyihalarini boshqarish\",\"Kiberxavfsizlik va startap loyihalarini yo'lga qo'yish\",\"Kichik va o'rta bizneslar uchun raqamlashtirish yechimlari\",\"Jamoa va loyiha boshqaruvi (PM)\"]",
+        "isActive": "true",
+        "order": 0,
+        "id": "0965de68-caca-4498-81f1-ec6e05c607f4",
+        "createdAt": "2026-03-12T10:00:38.710Z"
+      }
+    ],
+    [
+      "7b6ae574-9b69-430c-9ece-4fff7969fc2d",
+      {
+        "name": "Azizbek",
+        "role": "Full-Stack Developer",
+        "bio": "Murakkab tizimlarning arxitekturasini yaratish va ularni hayotga tatbiq etish mahorati.\nHar bir satr kodda sifat va samaradorlikni birinchi o'ringa qo'yaman.\nZamonaviy texnologiyalar yordamida biznesingizni yangi bosqichga olib chiqamiz.",
+        "imageUrl": "/uploads/2b.png",
+        "isMain": "false",
+        "department": "Dasturlash",
+        "responsibilities": "[\"Veb va mobil ilovalarning backend qismini ishlab chiqish\",\"Ma'lumotlar bazasi arxitekturasini loyihalash va optimallashtirish\",\"Frontend interfeyslarni zamonaviy frameworklar yordamida yaratish\"]",
+        "isActive": "true",
+        "order": 1,
+        "id": "7b6ae574-9b69-430c-9ece-4fff7969fc2d",
+        "createdAt": "2026-03-12T12:15:59.701Z"
+      }
+    ],
+    [
+      "046e00db-e204-4d84-af6d-1684d886f915",
+      {
+        "name": "Firdavs",
+        "role": "Full-Stack Developer",
+        "bio": "Kodni san'at darajasiga ko'tarishga intiluvchi dasturchi.\nHar bir loyihada mukammal foydalanuvchi tajribasi va barqaror backend uyg'unligini yaratamiz.\nInnovatsion g'oyalaringizni professional darajada kodga ko'chirish bizning vazifamiz.",
+        "imageUrl": "/uploads/22.jpg",
+        "isMain": "false",
+        "department": "Dasturlash",
+        "responsibilities": "[\"Yuqori yuklamali tizimlarni optimallashtirish\",\"API integratsiyasi va xavfsizlik protokollarini amalga oshirish\",\"Modulli va test qilinadigan frontend arxitekturasini yaratish\"]",
+        "isActive": "true",
+        "order": 2,
+        "id": "046e00db-e204-4d84-af6d-1684d886f915",
+        "createdAt": "2026-03-12T12:24:46.623Z"
+      }
+    ],
+    [
+      "11719f45-5c99-41e5-bd11-3dc373130c40",
+      {
+        "name": "Suxrob",
+        "role": "App Developer",
+        "bio": "Mobil ilovalar olamida foydalanuvchilar va texnologiya o'rtasida ko'prik o'rnatamiz.\nHar bir loyihada tezkorlik, barqarorlik va chiroyli dizayn uyg'unligini ta'minlash bizning asosiy maqsadimiz.\nMukammal mobil yechimlar orqali biznesingizni mijozlaringizning cho'ntagigacha olib kiramiz.",
+        "imageUrl": "/uploads/44.jpg",
+        "isMain": "false",
+        "department": "Dasturlash",
+        "responsibilities": "[\"iOS va Android uchun native va cross-platform ilovalar yaratish\",\"Mobil interfeyslarni (UI) foydalanuvchi tajribasi (UX) asosida ishlab chiqish\",\"App Store va Google Play platformalariga ilovalarni joylashtirish va qo'llab-quvvatlash\"]",
+        "isActive": "true",
+        "order": 3,
+        "id": "11719f45-5c99-41e5-bd11-3dc373130c40",
+        "createdAt": "2026-03-12T12:31:11.074Z"
+      }
+    ]
+  ],
+  "users": [
+    [
+      1,
+      {
+        "id": 1,
+        "username": "admin",
+        "password": "password123",
+        "isAdmin": true
+      }
+    ]
+  ],
+  "currentUserId": 2
+}

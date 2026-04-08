@@ -1,0 +1,57 @@
+{
+  "success": true,
+  "data": [
+    {
+      "id": "0965de68-caca-4498-81f1-ec6e05c607f4",
+      "name": "Ataullayev Saidmuhammadalixon",
+      "role": "CEO",
+      "bio": "SAYD.X IT kompaniyasi asoschisi. Full-stack dasturlash, Telegram botlar, ovozli AI saytlar va Google Sheets bo'yicha mutaxassis. Veb-saytlar, avtomatlashtirish va kiberxavfsizlik yo'nalishida 50+ loyiha boshqaradi. Innovatsion yechimlar va sifatga intiladigan yosh tadbirkor.",
+      "imageUrl": "/47.jpg",
+      "isMain": "true",
+      "department": "Rahbar",
+      "responsibilities": "[\"Kompaniya strategik rivojlanishini boshqarish\",\"IT, veb-sayt, Telegram bot va avtomatlashtirish loyihalarini boshqarish\",\"Kiberxavfsizlik va startap loyihalarini yo'lga qo'yish\",\"Kichik va o'rta bizneslar uchun raqamlashtirish yechimlari\",\"Jamoa va loyiha boshqaruvi (PM)\"]",
+      "isActive": "true",
+      "order": 0,
+      "createdAt": "2026-03-12T10:00:38.710Z"
+    },
+    {
+      "id": "7b6ae574-9b69-430c-9ece-4fff7969fc2d",
+      "name": "Azizbek",
+      "role": "Full-Stack Developer",
+      "bio": "Murakkab tizimlarning arxitekturasini yaratish va ularni hayotga tatbiq etish mahorati.\nHar bir satr kodda sifat va samaradorlikni birinchi o'ringa qo'yaman.\nZamonaviy texnologiyalar yordamida biznesingizni yangi bosqichga olib chiqamiz.",
+      "imageUrl": "/2b.png",
+      "isMain": "false",
+      "department": "Dasturlash",
+      "responsibilities": "[\"Veb va mobil ilovalarning backend qismini ishlab chiqish\",\"Ma'lumotlar bazasi arxitekturasini loyihalash va optimallashtirish\",\"Frontend interfeyslarni zamonaviy frameworklar yordamida yaratish\"]",
+      "isActive": "true",
+      "order": 1,
+      "createdAt": "2026-03-12T12:15:59.701Z"
+    },
+    {
+      "id": "046e00db-e204-4d84-af6d-1684d886f915",
+      "name": "Firdavs",
+      "role": "Full-Stack Developer",
+      "bio": "Kodni san'at darajasiga ko'tarishga intiluvchi dasturchi.\nHar bir loyihada mukammal foydalanuvchi tajribasi va barqaror backend uyg'unligini yaratamiz.\nInnovatsion g'oyalaringizni professional darajada kodga ko'chirish bizning vazifamiz.",
+      "imageUrl": "/22.jpg",
+      "isMain": "false",
+      "department": "Dasturlash",
+      "responsibilities": "[\"Yuqori yuklamali tizimlarni optimallashtirish\",\"API integratsiyasi va xavfsizlik protokollarini amalga oshirish\",\"Modulli va test qilinadigan frontend arxitekturasini yaratish\"]",
+      "isActive": "true",
+      "order": 2,
+      "createdAt": "2026-03-12T12:24:46.623Z"
+    },
+    {
+      "id": "11719f45-5c99-41e5-bd11-3dc373130c40",
+      "name": "Suxrob",
+      "role": "App Developer",
+      "bio": "Mobil ilovalar olamida foydalanuvchilar va texnologiya o'rtasida ko'prik o'rnatamiz.\nHar bir loyihada tezkorlik, barqarorlik va chiroyli dizayn uyg'unligini ta'minlash bizning asosiy maqsadimiz.\nMukammal mobil yechimlar orqali biznesingizni mijozlaringizning cho'ntagigacha olib kiramiz.",
+      "imageUrl": "/44.jpg",
+      "isMain": "false",
+      "department": "Dasturlash",
+      "responsibilities": "[\"iOS va Android uchun native va cross-platform ilovalar yaratish\",\"Mobil interfeyslarni (UI) foydalanuvchi tajribasi (UX) asosida ishlab chiqish\",\"App Store va Google Play platformalariga ilovalarni joylashtirish va qo'llab-quvvatlash\"]",
+      "isActive": "true",
+      "order": 3,
+      "createdAt": "2026-03-12T12:31:11.074Z"
+    }
+  ]
+}
