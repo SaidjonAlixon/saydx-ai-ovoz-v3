@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { Mic, MicOff, X, MessageCircle, Settings, Volume2, VolumeX, Eye } from "lucide-react";
+import { Mic, MicOff, X, Settings, Volume2, VolumeX, Eye, Power } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLocation } from "wouter";
 import { VoiceAssistant } from "@/lib/voiceAssistant";
@@ -12,6 +12,8 @@ export default function AIAssistant() {
   const [isMuted, setIsMuted] = useState(false);
   const [isAutoNav, setIsAutoNav] = useState(true);
   const [lastTranscript, setLastTranscript] = useState("");
+  /** Jonli sessiyada: true = serverga mikrofon yuborilmaydi (AI javobi ovozda davom etadi) */
+  const [micSendPaused, setMicSendPaused] = useState(false);
   const [, setLocation] = useLocation();
   const assistantRef = useRef<VoiceAssistant | null>(null);
 
@@ -108,10 +110,14 @@ export default function AIAssistant() {
   }, []);
 
   useEffect(() => {
-    if (assistantRef.current) {
-      assistantRef.current.isMuted = isMuted;
-    }
+    assistantRef.current?.setSpeakerMuted(isMuted);
   }, [isMuted]);
+
+  useEffect(() => {
+    if (isActive && assistantRef.current) {
+      assistantRef.current.setMicInputToServer(!micSendPaused);
+    }
+  }, [micSendPaused, isActive]);
 
   const handleCommand = (command: string) => {
     console.log("Raw Command:", command);
@@ -210,6 +216,7 @@ export default function AIAssistant() {
             isConnectingRef.current = false;
             setIsActive(true);
             isActiveRef.current = true;
+            setMicSendPaused(false);
           }
 
           if ((s === "Disconnected" || s === "Error")) {
@@ -221,6 +228,8 @@ export default function AIAssistant() {
             
             setIsStopping(false);
             isStoppingRef.current = false;
+
+            setMicSendPaused(false);
             
             setIsActive(false);
             isActiveRef.current = false;
@@ -246,25 +255,28 @@ export default function AIAssistant() {
     }
   };
 
-  const toggleAssistant = async () => {
-    if (isConnecting) {
-      console.log("Toggle ignored while connecting");
-      return;
-    }
+  /** Sessiyani butunlay yopish (WebSocket + mikrofon). Tugma faqat mikrofon tinglashini almashtiradi. */
+  const stopAssistantFully = () => {
+    isStoppingRef.current = true;
+    setMicSendPaused(false);
+    setIsStopping(true);
+    setStatus("Yopilmoqda...");
+    assistantRef.current?.stop();
+  };
 
-    if (isActive) {
-      if (isStopping) return; // ignore multiple clicks
-      
-      console.log("Requesting Graceful Stop...");
-      setIsStopping(true);
-      isStoppingRef.current = true;
-      setStatus("Closing...");
-      assistantRef.current?.requestStop();
-    } else {
+  /** Asosiy tugma: yoqilmagan bo'lsa — ulanish; jonli bo'lsa — serverga mikrofon yuborishni yoqish/o'chirish (AI javobi davom etadi) */
+  const toggleAssistant = async () => {
+    if (isConnecting) return;
+
+    if (!isActive) {
+      setMicSendPaused(false);
       setIsStopping(false);
       isStoppingRef.current = false;
       await startAssistant();
+      return;
     }
+
+    setMicSendPaused((prev) => !prev);
   };
 
   return (
@@ -354,17 +366,38 @@ export default function AIAssistant() {
                   <div className={`w-2 h-2 rounded-full ${status === "Connected" ? "bg-green-500 animate-pulse shadow-[0_0_8px_rgba(34,197,94,0.6)]" : "bg-zinc-600"}`} />
                   <span className="text-[10px] font-bold text-zinc-500 uppercase tracking-tighter">Status: {status}</span>
                 </div>
+
+                <button
+                  type="button"
+                  onClick={() => {
+                    setIsOpen(false);
+                    stopAssistantFully();
+                  }}
+                  className="w-full flex items-center justify-center gap-2 py-3 rounded-2xl bg-red-500/10 border border-red-500/30 text-red-400 text-xs font-bold uppercase tracking-wider hover:bg-red-500/20 transition-colors"
+                >
+                  <Power className="w-4 h-4" />
+                  Yordamchini to'liq yopish
+                </button>
               </div>
             </div>
           </motion.div>
         )}
       </AnimatePresence>
 
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-3">
+        <button
+          type="button"
+          aria-label="Boshqaruv paneli"
+          onClick={() => setIsOpen((o) => !o)}
+          className="pointer-events-auto p-3 rounded-full bg-zinc-900/90 backdrop-blur-md border border-white/10 text-zinc-400 hover:text-white hover:border-white/20 transition-colors shadow-lg"
+        >
+          <Settings className="w-5 h-5" />
+        </button>
+
         {/* AI Orb Button */}
         <div className="relative cursor-pointer group pointer-events-auto" onClick={toggleAssistant}>
           <AnimatePresence>
-            {isActive && (
+            {isActive && !micSendPaused && (
               <motion.div
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ 
@@ -392,12 +425,12 @@ export default function AIAssistant() {
             }}
             transition={{
               repeat: Infinity,
-              duration: isActive ? 2 : 4,
+              duration: isActive && !micSendPaused ? 2 : 4,
               ease: "easeInOut"
             }}
             whileHover={{ scale: 1.1 }}
             className={`relative w-20 h-20 md:w-24 md:h-24 flex items-center justify-center rounded-full overflow-hidden transition-all duration-500 
-              ${isStopping ? "bg-zinc-800 border-orange-500 border-2" : 
+              ${isActive && micSendPaused ? "bg-gradient-to-br from-amber-900/90 to-zinc-900 border-2 border-amber-500/60 shadow-[0_0_24px_rgba(245,158,11,0.25)]" : isStopping ? "bg-zinc-800 border-orange-500 border-2" : 
                 isActive ? "bg-gradient-to-br from-orange-500 to-amber-600 shadow-[0_0_30px_rgba(234,88,12,0.4)]" : "bg-zinc-900/80 backdrop-blur-md border border-white/10"}`}
           >
             {/* Orb Interior Visuals */}
@@ -429,6 +462,17 @@ export default function AIAssistant() {
                   >
                     <Mic className="w-6 h-6 md:w-8 md:h-8 text-orange-500 drop-shadow-md" />
                   </motion.div>
+                ) : isActive && micSendPaused ? (
+                  <motion.div
+                    key="paused"
+                    initial={{ scale: 0.5, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 0.2 }}
+                    exit={{ scale: 0.5, opacity: 0, transition: { duration: 0.2 } }}
+                    className="absolute"
+                  >
+                    <MicOff className="w-6 h-6 md:w-8 md:h-8 text-amber-300 drop-shadow-lg" />
+                  </motion.div>
                 ) : isActive ? (
                   <motion.div
                     key="active"
@@ -456,10 +500,10 @@ export default function AIAssistant() {
             </div>
             
             {/* Status Indicator */}
-            <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-black/20 backdrop-blur-sm border border-white/5">
-              <div className={`w-1.5 h-1.5 rounded-full ${isStopping ? "bg-orange-500 animate-pulse" : isActive ? "bg-green-500 shadow-[0_0_8px_#22c55e]" : "bg-zinc-600"}`} />
-              <span className="text-[8px] font-bold text-white/70 uppercase tracking-tighter">
-                {isStopping ? "Closing" : isActive ? "Live" : "Idle"}
+            <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-black/20 backdrop-blur-sm border border-white/5 max-w-[95%]">
+              <div className={`w-1.5 h-1.5 rounded-full shrink-0 ${isStopping ? "bg-orange-500 animate-pulse" : isActive && micSendPaused ? "bg-amber-400 shadow-[0_0_6px_rgba(251,191,36,0.8)]" : isActive ? "bg-green-500 shadow-[0_0_8px_#22c55e]" : "bg-zinc-600"}`} />
+              <span className="text-[7px] font-bold text-white/70 uppercase tracking-tighter truncate">
+                {isConnecting ? "Ulanmoqda" : isStopping ? "Yopilmoqda" : isActive && micSendPaused ? "Mik o'chiq" : isActive ? "Tinglash" : "Kutish"}
               </span>
             </div>
           </motion.div>

@@ -1,4 +1,10 @@
-import { GoogleGenAI, LiveServerMessage, Modality } from "@google/genai";
+import {
+  GoogleGenAI,
+  LiveServerMessage,
+  Modality,
+  StartSensitivity,
+  ActivityHandling,
+} from "@google/genai";
 
 // Audio processing constants
 const INPUT_SAMPLE_RATE = 16000;
@@ -15,10 +21,41 @@ export class VoiceAssistant {
   private nextStartTime = 0;
   private activeSources: AudioBufferSourceNode[] = [];
   public isMuted = false;
+
+  /** Speaker mute (UI). Does not stop the model; only adjusts playback volume. */
+  setSpeakerMuted(muted: boolean) {
+    this.isMuted = muted;
+    if (this.playbackGain) {
+      this.playbackGain.gain.value = muted ? 0 : 1;
+    }
+  }
+
+  /** True while model is sending audio or local playback queue is non-empty (user can tap to interrupt). */
+  isSpeaking(): boolean {
+    return this.isGenerating || this.activeSources.length > 0;
+  }
+
+  /**
+   * When false, only silence is sent to the Live API (mic "muted" for the server).
+   * Playback of the current AI reply continues. Default true after start().
+   */
+  private micInputToServerEnabled = true;
+
+  setMicInputToServer(enabled: boolean) {
+    this.micInputToServerEnabled = enabled;
+  }
+
+  getMicInputToServer(): boolean {
+    return this.micInputToServerEnabled;
+  }
+
   public isStopping = false;
   private isGenerating = false;
-  private pendingCloseTimeout: any = null;
   private statusCallback: ((status: string) => void) | null = null;
+  /** Mic graph: filter -> processor -> muteGain -> destination (gain 0 = no speaker bleed / feedback). */
+  private muteMonitorGain: GainNode | null = null;
+  /** AI playback volume; isMuted only sets gain to 0 — chunks are still decoded/queued so the turn can finish. */
+  private playbackGain: GainNode | null = null;
 
   constructor() {
     try {
@@ -65,6 +102,7 @@ export class VoiceAssistant {
     if (this.session) return;
     this.isStopping = false;
     this.isGenerating = false;
+    this.micInputToServerEnabled = true;
     this.statusCallback = onStatusChange;
     if (!this.ai) {
       console.error("AI not initialized, cannot start session");
@@ -78,11 +116,14 @@ export class VoiceAssistant {
       this.audioContext = new (window.AudioContext || (window as any).webkitAudioContext)({
         sampleRate: 16000,
       });
-      this.mediaStream = await navigator.mediaDevices.getUserMedia({ 
+      this.mediaStream = await navigator.mediaDevices.getUserMedia({
         audio: {
           channelCount: 1,
-          sampleRate: 16000
-        } 
+          sampleRate: 16000,
+          echoCancellation: true,
+          noiseSuppression: true,
+          autoGainControl: true,
+        } as MediaTrackConstraints,
       });
       
       if (!this.audioContext) throw new Error("AudioContext creation failed");
@@ -96,7 +137,14 @@ export class VoiceAssistant {
       
       this.source.connect(filter);
       filter.connect(this.processor);
-      this.processor.connect(this.audioContext.destination);
+      this.muteMonitorGain = this.audioContext.createGain();
+      this.muteMonitorGain.gain.value = 0;
+      this.processor.connect(this.muteMonitorGain);
+      this.muteMonitorGain.connect(this.audioContext.destination);
+
+      this.playbackGain = this.audioContext.createGain();
+      this.playbackGain.gain.value = 1;
+      this.playbackGain.connect(this.audioContext.destination);
 
       const modelName = "models/gemini-2.5-flash-native-audio-latest";
       console.log(`Connecting to: ${modelName} via v1beta`);
@@ -108,7 +156,17 @@ export class VoiceAssistant {
         model: modelName,
         config: {
           systemInstruction: { parts: [{ text: systemInstruction }] },
-          responseModalities: ["AUDIO"] as any
+          responseModalities: ["AUDIO"] as any,
+          maxOutputTokens: 8192,
+          realtimeInputConfig: {
+            // Allow voice "barge-in" during replies; echo is mitigated via AEC + low sensitivity
+            activityHandling: ActivityHandling.START_OF_ACTIVITY_INTERRUPTS,
+            automaticActivityDetection: {
+              startOfSpeechSensitivity: StartSensitivity.START_SENSITIVITY_LOW,
+              prefixPaddingMs: 400,
+              silenceDurationMs: 600,
+            },
+          },
         },
         callbacks: {
           onopen: () => {
@@ -176,18 +234,21 @@ export class VoiceAssistant {
       
       try {
         const inputData = e.inputBuffer.getChannelData(0);
-        
+        const capture = this.micInputToServerEnabled
+          ? inputData
+          : new Float32Array(inputData.length);
+
         let maxAmp = 0;
-        for (let i = 0; i < inputData.length; i++) {
-          const abs = Math.abs(inputData[i]);
+        for (let i = 0; i < capture.length; i++) {
+          const abs = Math.abs(capture[i]);
           if (abs > maxAmp) maxAmp = abs;
         }
 
         if (chunkCount === 0) {
-          console.log("FIRST AUDIO CHUNK CAPTURED. maxAmp:", maxAmp.toFixed(4));
+          console.log("FIRST AUDIO CHUNK CAPTURED. maxAmp:", maxAmp.toFixed(4), "micToServer:", this.micInputToServerEnabled);
         }
 
-        const pcmData = this.floatTo16BitPCM(inputData);
+        const pcmData = this.floatTo16BitPCM(capture);
         const base64Data = this.uint8ArrayToBase64(new Uint8Array(pcmData.buffer));
         
         if (chunkCount % 40 === 0) { 
@@ -208,8 +269,10 @@ export class VoiceAssistant {
   }
 
   private async playAudio(base64Data: string) {
-    if (!this.audioContext || this.isMuted) return;
+    if (!this.audioContext || !this.playbackGain) return;
     try {
+      this.playbackGain.gain.value = this.isMuted ? 0 : 1;
+
       const bytes = this.base64ToUint8Array(base64Data);
       const view = new DataView(bytes.buffer);
       const floatArray = new Float32Array(bytes.length / 2);
@@ -223,7 +286,7 @@ export class VoiceAssistant {
       
       const source = this.audioContext.createBufferSource();
       source.buffer = audioBuffer;
-      source.connect(this.audioContext.destination);
+      source.connect(this.playbackGain);
       
       const now = this.audioContext.currentTime;
       let startTime = this.nextStartTime;
@@ -256,36 +319,15 @@ export class VoiceAssistant {
     this.nextStartTime = 0;
   }
 
+  /** @deprecated Use stop(); kept for compatibility */
   requestStop() {
-    console.log("Graceful shutdown requested...");
-    this.isStopping = true;
-    if (this.processor) {
-      this.processor.onaudioprocess = null; // stop listening to user
-    }
-    
-    // Give the server 3 seconds to START a response if one is pending.
-    setTimeout(() => {
-      if (this.isStopping && !this.isGenerating && this.activeSources.length === 0) {
-        console.log("No response started within 3 seconds. Safely stopping.");
-        this.stop();
-      }
-    }, 3000);
-
-    // Safety timeout: force close if AI takes too long to finish answering
-    this.pendingCloseTimeout = setTimeout(() => {
-      console.log("Force stopping after timeout...");
-      this.stop();
-    }, 15000); 
+    this.stop();
   }
 
   stop() {
     console.log("Stopping VoiceAssistant...");
     this.isStopping = false;
-    if (this.pendingCloseTimeout) {
-      clearTimeout(this.pendingCloseTimeout);
-      this.pendingCloseTimeout = null;
-    }
-    
+
     this.session?.close();
     this.session = null;
     
@@ -304,7 +346,10 @@ export class VoiceAssistant {
       this.source.disconnect();
       this.source = null;
     }
-    
+
+    this.muteMonitorGain = null;
+    this.playbackGain = null;
+
     if (this.audioContext) {
       this.audioContext.close();
       this.audioContext = null;

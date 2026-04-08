@@ -39,7 +39,7 @@ export default function ServiceCard({
       whileHover={{ y: -12, scale: 1.02 }}
       className="group"
     >
-      <Card className="relative bg-[#0f172a]/80 backdrop-blur-xl border-white/5 rounded-[32px] overflow-hidden transition-all duration-500 group-hover:border-cyan-500/30 group-hover:shadow-[0_20px_50px_rgba(6,182,212,0.2)] h-full flex flex-col">
+      <Card className="relative bg-[#0f172a]/80 backdrop-blur-xl border-white/5 rounded-[32px] overflow-hidden transition-all duration-500 group-hover:border-cyan-500/30 group-hover:shadow-[0_20px_50px_rgba(6,182,212,0.2)] h-full flex flex-col min-w-0">
         {/* Animated Glow Backlight */}
         <div className="absolute -top-[20%] -right-[20%] w-[60%] h-[60%] bg-cyan-600/10 blur-[80px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
         <div className="absolute -bottom-[20%] -left-[20%] w-[60%] h-[60%] bg-purple-600/10 blur-[80px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
@@ -47,35 +47,40 @@ export default function ServiceCard({
         {/* Glass Shine Effect */}
         <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
 
-        <CardHeader className="pb-4 relative z-10">
-          <div className="flex items-start justify-between mb-6">
-            <div className="flex items-center gap-4">
+        <CardHeader className="pb-4 relative z-10 min-w-0 overflow-hidden">
+          <div className="flex items-start gap-2 sm:gap-3 mb-6 w-full min-w-0">
+            <div className="flex items-start gap-2 sm:gap-3 min-w-0 flex-1">
               <motion.div 
                 whileHover={{ rotate: 12, scale: 1.1 }}
-                className="p-3 bg-cyan-500/10 border border-cyan-500/20 rounded-2xl text-cyan-400"
+                className="p-3 bg-cyan-500/10 border border-cyan-500/20 rounded-2xl text-cyan-400 shrink-0"
               >
                 {icon}
               </motion.div>
-              <div>
-                <div className="flex items-center gap-2 mb-2">
-                  <Badge variant="secondary" className="bg-white/5 hover:bg-white/10 text-white/40 text-[9px] uppercase font-black px-2 py-0.5 border-white/5">
+              <div className="min-w-0 flex-1">
+                <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 mb-2">
+                  <Badge variant="secondary" className="bg-white/5 hover:bg-white/10 text-white/40 text-[9px] uppercase font-black px-2 py-0.5 border-white/5 max-w-full truncate">
                     {category}
                   </Badge>
                   {rating > 4.8 && (
-                    <Badge className="bg-cyan-500/10 text-cyan-400 text-[9px] uppercase font-black px-2 border-cyan-500/20">
+                    <Badge className="bg-cyan-500/10 text-cyan-400 text-[9px] uppercase font-black px-2 border-cyan-500/20 shrink-0">
                       Popular
                     </Badge>
                   )}
                 </div>
-                <CardTitle className="text-xl font-black text-white tracking-tight uppercase leading-none">{title}</CardTitle>
+                <CardTitle className="text-base sm:text-lg md:text-xl font-black text-white tracking-tight uppercase leading-snug break-words hyphens-auto">
+                  {title}
+                </CardTitle>
               </div>
             </div>
-            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-bold text-white/60">
-              <Star className="w-3.5 h-3.5 fill-yellow-500 text-yellow-500" />
+            <div
+              className="flex shrink-0 items-center gap-1 px-2 sm:px-2.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-[11px] sm:text-xs font-bold text-white/60 whitespace-nowrap"
+              aria-label={`Reyting ${rating}`}
+            >
+              <Star className="w-3.5 h-3.5 shrink-0 fill-yellow-500 text-yellow-500" />
               <span>{rating}</span>
             </div>
           </div>
-          <CardDescription className="text-sm leading-relaxed text-white/40 font-medium">
+          <CardDescription className="text-sm leading-relaxed text-white/40 font-medium min-w-0 break-words">
             {description}
           </CardDescription>
         </CardHeader>

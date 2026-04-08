@@ -52,7 +52,7 @@ export default function PortfolioCard({
         whileHover={{ y: -12, scale: 1.02 }}
         className="group h-full"
       >
-        <Card className="relative bg-[#0f172a]/80 backdrop-blur-xl border-white/5 rounded-[32px] overflow-hidden transition-all duration-500 group-hover:border-cyan-500/30 group-hover:shadow-[0_20px_50px_rgba(6,182,212,0.2)] h-full flex flex-col border">
+        <Card className="relative bg-[#0f172a]/80 backdrop-blur-xl border-white/5 rounded-[32px] overflow-hidden transition-all duration-500 group-hover:border-cyan-500/30 group-hover:shadow-[0_20px_50px_rgba(6,182,212,0.2)] h-full flex flex-col border min-w-0">
           {/* Animated Glow Backlight */}
           <div className="absolute -top-[20%] -right-[20%] w-[60%] h-[60%] bg-cyan-600/10 blur-[80px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
           <div className="absolute -bottom-[20%] -left-[20%] w-[60%] h-[60%] bg-purple-600/10 blur-[80px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
@@ -70,17 +70,19 @@ export default function PortfolioCard({
             <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-transparent to-transparent z-20" />
           </div>
 
-          <CardHeader className="pb-4 relative z-30 -mt-12 px-6">
-            <div className="flex items-start justify-between mb-2">
-              <Badge className="bg-cyan-500/10 text-cyan-400 text-[10px] uppercase font-black px-3 py-1 border-cyan-500/20 backdrop-blur-md">
-                {category}
-              </Badge>
-              <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[10px] font-black text-white/40 uppercase tracking-widest">
-                <Clock className="w-3.5 h-3.5 text-cyan-500/50" />
+          <CardHeader className="pb-4 relative z-30 -mt-12 px-6 min-w-0 overflow-hidden">
+            <div className="flex items-start gap-2 mb-2 w-full min-w-0">
+              <div className="min-w-0 flex-1">
+                <Badge className="bg-cyan-500/10 text-cyan-400 text-[10px] uppercase font-black px-3 py-1 border-cyan-500/20 backdrop-blur-md inline-flex max-w-full whitespace-normal text-left leading-snug break-words">
+                  {category}
+                </Badge>
+              </div>
+              <div className="flex shrink-0 items-center gap-1.5 px-2.5 sm:px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[10px] font-black text-white/40 uppercase tracking-widest whitespace-nowrap">
+                <Clock className="w-3.5 h-3.5 shrink-0 text-cyan-500/50" />
                 <span>{duration}</span>
               </div>
             </div>
-            <CardTitle className="text-xl font-black text-white tracking-tight uppercase leading-none mb-2">{title}</CardTitle>
+            <CardTitle className="text-xl font-black text-white tracking-tight uppercase leading-snug mb-2 break-words hyphens-auto">{title}</CardTitle>
             <CardDescription className="text-sm leading-relaxed text-white/40 font-medium line-clamp-2">
               {description}
             </CardDescription>
